@@ -1,0 +1,7 @@
+<p>We have {{videos.length}} videos for you.</p>
+
+<ul>
+  <li *ngFor="let video of videos" (click)="onSelect(video)">{{video.title}}</li>
+</ul>
+
+{{currentVideo}}
